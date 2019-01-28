@@ -1,1 +1,2 @@
-# exp7
+# jpacman
+Orginal code for JPacman
