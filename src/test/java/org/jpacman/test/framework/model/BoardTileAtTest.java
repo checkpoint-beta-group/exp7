@@ -26,7 +26,7 @@ public class BoardTileAtTest {
 	private Direction dir;
 	private int nextx, nexty;
 	private Board board;
-
+	private static final int I = 3;
 	private static final int WIDTH = 10;
 	private static final int HEIGHT = 20;
 
@@ -53,9 +53,9 @@ public class BoardTileAtTest {
 				// x-axis boundaries, y random inpoints
 				// left boundary
 				{2, 2, Direction.UP, 2, 1 },
-				{2, 2, Direction.DOWN, 2, 3 },
+				{2, 2, Direction.DOWN, 2, I },
 				{2, 2, Direction.LEFT, 1, 2 },
-				{2, 2, Direction.RIGHT, 3, 2 },
+				{2, 2, Direction.RIGHT, I, 2 },
 				// worm holes
 				{0, 2, Direction.LEFT, WIDTH - 1, 2 },
 				{WIDTH - 1, 2, Direction.RIGHT, 0, 2 },
