@@ -76,7 +76,7 @@ public class Game extends Observable
 	 * Player intends to move towards an occupied tile:
 	 * if there's a ghost there, the game is over.
 	 * @param p The player
-	 * @param currentSprite
+	 * @param currentSprite The current sprite
 	 */
 	private void dieIfGhost(Player p, Sprite currentSprite) {
 		if (currentSprite instanceof Ghost) {
@@ -100,9 +100,9 @@ public class Game extends Observable
 	/**
 	 * Check if there's room on the target tile.
 	 * @param target Tile to be occupied by other sprite.
-	 * @return
+	 * @return testdoc
 	 */
-	private boolean tileCanBeOccupied(Tile target) {
+	private boolean tileCanBeOccupied(final Tile target) {
 		Sprite currentOccupier = target.topSprite();
 		return !(currentOccupier instanceof Wall);
 	}

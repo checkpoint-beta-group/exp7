@@ -14,7 +14,10 @@ import org.junit.Test;
  * @author Arie van Deursen, TU Delft, Feb 4, 2012
  */
 public class MainUISmokeTest {
-	
+    /**
+     * i = 10.
+     */
+    private static final int I = 10;
 	@Test
 	public void testUIActions() throws FactoryException, InterruptedException {
 		MainUI ui = new MainUI();
@@ -28,7 +31,7 @@ public class MainUISmokeTest {
 		eventHandler.left();
 
 		// give the monsters some time to move.
-		Thread.sleep(10 * AbstractGhostMover.DELAY);
+        Thread.sleep(I * AbstractGhostMover.DELAY);
 
 		// and attempt some moves again.
 		eventHandler.down();
